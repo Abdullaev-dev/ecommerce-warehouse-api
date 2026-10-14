@@ -40,6 +40,13 @@ src/main/java/az/ingress/e_commerce
 
 ## Getting Started
 
+## Running Tests
+
+```bash
+./gradlew test
+```
+Unit tests (JUnit 5, Mockito) cover order creation: successful order, insufficient stock and missing user.
+
 ### Prerequisites
 - Java 17
 - Docker
@@ -125,6 +132,6 @@ The API starts on `http://localhost:8080`. Tables are created automatically by H
 
 - JWT authentication and role-based authorization
 - Swagged / OpenAPI documentation
-- Unit and integration tests
+- Integration tests and unit tests for other services
 - Dockerize the application with docker-compose
 
